@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+$font-400: 1rem;
+$font-500: 1.25rem;
+$font-600: 1.75rem;
+$font-700: 2.5rem;
+$font-xl: 5rem;
+
+$main-dark: #1D1D1F;
+$main-light: #d9d6dc;
+$font-headers-dark: #000000;
+$font-headers-light: #f1eeff;
+$font-text: #242226;
+$border-color: #332c4b;
+
+$border: 2px solid $border-color;
+
+
+*, ::before, ::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0
+}
+
+a{
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+}
+
+body{
+  font-family: 'Lato', sans-serif;
+}
+
+
+.app{
+  min-height: calc(100vh - 50px);
+  position: relative;
+}

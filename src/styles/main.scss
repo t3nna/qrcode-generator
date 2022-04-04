@@ -1,0 +1,74 @@
+@use "index";
+
+.main-container {
+  margin-top: 50px;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: min(100%, 35em);
+  align-items: center;
+}
+
+.main-title {
+  font-size: clamp(2.5rem, 7vw, 3.625rem);
+  font-weight: 900;
+  margin-top: 1.5rem;
+}
+
+.input-container {
+  width: 100%;
+}
+
+.input-container input {
+  font-size: 1.5rem;
+  padding: 0.625rem;
+  width: 100%;
+  border-radius: 6px;
+  border: index.$border;
+
+  &:focus {
+    border: 2px solid #6E42C2;
+    outline: 2px solid #6E42C2;
+  }
+}
+
+.quick-properties-container {
+  width: min(100%, 30rem);
+  //width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  flex-direction: column;
+
+
+}
+
+.quick-property, .slider-container {
+  //flex: 1 1 8em;
+  //font-size: 1rem;
+  padding: .75em 2em;
+  width: 100%;
+  border-radius: 6px;
+  font-size: 1.25rem;
+  border: index.$border;
+  cursor: pointer;
+}
+
+.slider-container{
+  cursor: auto;
+  input{
+    cursor: pointer;
+  }
+}
+
+.download-btn {
+  background-color: #6E42C2;
+  color: white;
+  outline: none;
+}
